@@ -86,6 +86,35 @@ footer strong{color:white}
     font-size:13px;
     color:#587184;
 }
+  .hours{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+.item{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  padding:14px 0;
+  border-bottom:1px solid #dbeafe;
+}
+
+.item:last-child{
+  border-bottom:none;
+}
+
+.item strong{
+  color:#075985;
+  min-width:140px;
+}
+
+.item-text{
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+  text-align:right;
+}
 </style>
 </head>
 <body>
@@ -138,25 +167,30 @@ footer strong{color:white}
   <div class="info">
     <div class="panel">
 
-      <h3>Jam Pelayanan</h3>
+      <h3>Waktu Pelayanan</h3>
 
       <div class="hours">
-        <div class="item">
-          <strong>Hari Kerja</strong>
-          <span>Senin – Kamis</span>
-        </div>
+          <div class="item">
+  <strong>Hari Kerja</strong>
+  <div class="item-text">
+    <span>Senin – Kamis</span>
+  </div>
+</div>
+
+         <div class="item">
+  <strong>Waktu Pelayanan</strong>
+  <div class="item-text">
+    <span>08.00 – 11.30 WITA</span>
+    <span>12.30 – 14.30 WITA</span>
+  </div>
+</div>
 
         <div class="item">
-          <strong>Jam</strong>
-          <span>08.00 – 11.30 WITA</span>
-          <span>12.30 – 14.30 WITA</span>
-        </div>
-
-        <div class="item">
-          <strong>Istirahat</strong>
-          <span>11.30 – 12.30 WITA</span>
-        </div>
-      </div>
+  <strong>Istirahat</strong>
+  <div class="item-text">
+    <span>11.30 – 12.30 WITA</span>
+  </div>
+</div>
 
     </div>
 </div>
