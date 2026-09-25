@@ -144,6 +144,26 @@ footer strong{color:white}
   gap:4px;
   text-align:right;
 }
+  .info-list{
+  list-style:none;
+  margin-top:18px;
+  padding:0;
+}
+
+.info-list li{
+  display:flex;
+  align-items:flex-start;
+  gap:10px;
+  margin-bottom:12px;
+  line-height:1.6;
+}
+
+.info-list li::before{
+  content:"✓";
+  color:#15803d;
+  font-weight:bold;
+  font-size:18px;
+}
 </style>
 </head>
 <body>
@@ -227,9 +247,15 @@ footer strong{color:white}
 
 <div class="panel">
   <h3>Informasi Sebelum Datang</h3>
-      <p>Siapkan persyaratan sesuai jenis layanan yang akan diajukan. Periksa kembali dokumen agar proses pemeriksaan administrasi dapat dilakukan dengan lancar.</p>
-    </div>
-  </div>
+
+  <ul class="info-list">
+    <li>Siapkan persyaratan sesuai jenis layanan yang akan diajukan.</li>
+    <li>Pastikan fotokopi KTP dan KK masih terbaca dengan jelas.</li>
+    <li>Bawa dokumen kapal atau surat keterangan usaha (jika diperlukan).</li>
+    <li>Datang pada hari kerja (Senin–Kamis) sesuai jam pelayanan.</li>
+    <li>Periksa kembali kelengkapan dokumen sebelum menyerahkan berkas.</li>
+  </ul>
+</div>
 </section>
 
 <section class="service-page" id="ekusuka">
