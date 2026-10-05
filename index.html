@@ -66,10 +66,12 @@ footer strong{color:white}
     height:60px;
     object-fit:contain;
 }
-    .logo-identitas{
+   .logo-identitas{
   width:60px;
   height:60px;
   object-fit:contain;
+  flex-shrink:0;
+  margin-left:10px;
 }
 
     .nav{
@@ -80,8 +82,9 @@ footer strong{color:white}
 }
 
 .brand{
-    display:flex;
-    flex-direction:column;
+  display:flex;
+  flex-direction:column;
+  flex:1;
 }
 
 .brand strong{
